@@ -1,0 +1,133 @@
+body{
+    background-color: #004c97;
+    color: #fff;
+    font-family: "Helvetica Neue",Helvetica,arial,"游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic","メイリオ",sans-serif;
+}
+
+div{
+    display: block;
+}
+
+li a{
+    display:block;
+    color:black;
+    text-decoration: none;   
+} 
+
+img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+.header{
+    background-image: url("https://miffy65.exhibit.jp/img/ogp.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 6% 46px;
+  }
+
+  .share-button{
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    height: 32px;
+  }
+
+  /* .share-images{
+      margin-left: 26px;
+  } */
+
+  .menu{
+      z-index: 1;
+      position: fixed;
+      bottom: 100px; 
+      right: 50px;
+      padding: 6px 40px;
+      color:black;
+  }
+
+  .menu-title{
+    border-bottom: 1px solid #080000;
+    width: 100%;
+    line-height: 2;
+    padding-bottom: 10px;
+    margin-bottom: 17px;
+  }
+
+  .menu-list{
+    list-style: none;
+    padding: 0%;
+  }
+
+.description{
+    /* background-color: #004C97; */
+    color: #ffffff;
+    padding: 216px 80px;
+}
+
+.concept-title{
+    display:inline-block;
+}
+
+.concept-box{
+    display: inline-block;
+    width: 544px;
+    margin-left: 128px;
+    margin-top: 0;
+}
+
+.twitter{
+    background-color:#ffffff;
+    color:#004C97;
+    text-align: center;
+    /* position:relative;  */
+    padding: 216px 100px;
+}
+
+.twitter-home{
+    position:relative; 
+}
+
+.twitter-title{
+    /* vertical-align:top; */
+    /* position: absolute; */
+    /* margin: 0 auto; */
+    margin: 96px 38% 40px auto;
+    /* margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto; */
+    /* margin: 96px 0 40px 0; */
+    line-height: 1;
+}
+
+.twitter-timeline-box{
+    padding: 30px 25px;
+    margin: 0 auto 216px auto;
+    /* margin-bottom: 216px; */
+    border: 3px solid #fccc00;
+    width: 544px;
+    height: 425px;
+}
+
+.twitter-timeline{
+    /* display: block; */
+    position: absolute;
+}
+
+.footer{
+    background-color: #004C97;
+    color: #ffffff;
+    padding: 96px 60px 30px;
+}
+
+/* @media screen and (max-width: 767px)
+.twitter-home {
+    margin-bottom: 68px;
+} */
+
+/* .twitter-home{
+        padding: 30px 25px;
+        margin-bottom: 216px;
+        border: 3px solid #fccc00;
+} */
