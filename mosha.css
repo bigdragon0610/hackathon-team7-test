@@ -1,124 +1,166 @@
-body{
-    background-color: #004c97;
-    color: #fff;
-    font-family: "Helvetica Neue",Helvetica,arial,"游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic","メイリオ",sans-serif;
+body {
+  background-color: #004c97;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, arial, "游ゴシック体", YuGothic,
+    "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+    "メイリオ", sans-serif;
 }
 
-div{
-    display: block;
+div {
+  display: block;
 }
 
-li a{
-    display:block;
-    color:black;
-    text-decoration: none;   
-} 
-
-img{
-    width: 25px;
-    height: 25px;
-    margin-left: 15px;
+li a {
+  display: block;
+  color: black;
+  text-decoration: none;
 }
 
-.header{
-    background-image: url("https://miffy65.exhibit.jp/img/ogp.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 0 6% 46px;
-  }
+.header {
+  background-image: url("https://miffy65.exhibit.jp/img/ogp.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 6% 46px;
+}
 
-  .share-button{
-    position: absolute;
-    top: 60px;
-    right: 30px;
-    height: 32px;
-  }
+.share-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+.share-button {
+  position: absolute;
+  top: 90px;
+  right: 60px;
+  height: 32px;
+}
 
-  /* .share-images{
+/* .share-images{
       margin-left: 26px;
   } */
 
-  .menu{
-      z-index: 1;
-      position: fixed;
-      bottom: 100px; 
-      right: 50px;
-      padding: 6px 40px;
-      color:black;
-  }
-
-  .menu-title{
-    border-bottom: 1px solid #080000;
-    width: 100%;
-    line-height: 2;
-    padding-bottom: 10px;
-    margin-bottom: 17px;
-  }
-
-  .menu-list{
-    list-style: none;
-    padding: 0%;
-  }
-
-.description{
-    /* background-color: #004C97; */
-    color: #ffffff;
-    padding: 216px 80px;
+.menu {
+  z-index: 1;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  padding: 6px 40px;
+  color: black;
 }
 
-.concept-title{
-    display:inline-block;
+.menu-title {
+  border-bottom: 1px solid #080000;
+  width: 100%;
+  line-height: 2;
+  padding-bottom: 10px;
+  margin-bottom: 17px;
 }
 
-.concept-box{
-    display: inline-block;
-    width: 544px;
-    margin-left: 128px;
-    margin-top: 0;
+.menu-list {
+  list-style: none;
+  padding: 0%;
 }
 
-.twitter{
-    background-color:#ffffff;
-    color:#004C97;
-    text-align: center;
-    /* position:relative;  */
-    padding: 216px 100px;
+.description {
+  /* background-color: #004C97; */
+  color: #ffffff;
+  padding: 216px 80px;
+  position: relative;
+  border-bottom: #080000 solid 7px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.twitter-home{
-    position:relative; 
+.concept-title {
+  display: flex;
+  /* margin-top:0px; */
 }
 
-.twitter-title{
-    /* vertical-align:top; */
-    /* position: absolute; */
-    /* margin: 0 auto; */
-    margin: 96px 38% 40px auto;
-    /* margin-bottom: 40px;
+.concept-box {
+  display: inline-block;
+  width: 544px;
+  margin-left: 128px;
+  margin-top: 0;
+}
+
+.p-1{
+    margin:0;
+}
+
+.p-2{
+    margin:34px 0;
+}
+
+.miffy-snow {
+  position: absolute;
+  bottom: -177px;
+  left: 0px;
+}
+
+.twitter {
+  background-color: #ffffff;
+  color: #004c97;
+  text-align: center;
+  /* position:relative;  */
+  padding: 216px 100px;
+}
+
+.twitter-home {
+  position: relative;
+}
+
+.twitter-title {
+  /* vertical-align:top; */
+  /* position: absolute; */
+  /* margin: 0 auto; */
+  margin: 96px 38% 40px auto;
+  /* margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto; */
-    /* margin: 96px 0 40px 0; */
-    line-height: 1;
+  /* margin: 96px 0 40px 0; */
+  line-height: 1;
 }
 
-.twitter-timeline-box{
-    padding: 30px 25px;
-    margin: 0 auto 216px auto;
-    /* margin-bottom: 216px; */
-    border: 3px solid #fccc00;
-    width: 544px;
-    height: 425px;
+.twitter-timeline-box {
+  padding: 30px 25px;
+  margin: 0 auto 216px auto;
+  /* margin-bottom: 216px; */
+  border: 3px solid #fccc00;
+  width: 544px;
+  height: 425px;
 }
 
-.twitter-timeline{
-    /* display: block; */
-    position: absolute;
+.twitter-timeline {
+  /* display: block; */
+  position: absolute;
 }
 
-.footer{
-    background-color: #004C97;
-    color: #ffffff;
-    padding: 96px 60px 30px;
+.footer {
+  background-color: #004c97;
+  color: #ffffff;
+  padding: 96px 60px 30px;
+  position: relative;
+  /* text-align: center; */
+  border-top: #080000 solid 6px;
+}
+
+.miffy-footer {
+  position: absolute;
+  top: -216px;
+  left: 29%;
+}
+
+.footer-box{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.hp-banner{
+    border: #080000 1px solid;
+    width: 200px;
+    height: 50px;
 }
 
 /* @media screen and (max-width: 767px)
