@@ -17,11 +17,10 @@ li a {
 }
 
 .header {
-  /* background-image: url("https://miffy65.exhibit.jp/img/ogp.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
   padding: 0 6% 46px;
   background: linear-gradient(180deg, #004c97 0%, #004c97 50%, #15722c 50%, #15722c 100%);
+  position: relative;
+  /* text-align: right; */
 }
 
 .miffy-header{
@@ -33,8 +32,15 @@ li a {
 .miffy-kumo{
   position: absolute;
   top:70%;
-  left:6%;
+  left:5%;
   height: 100px;
+}
+
+.miffy-65{
+  position: absolute;
+  top:73%;
+  left:12%;
+  /* height: 10px; */
 }
 
 .miffy-logo{
@@ -43,22 +49,73 @@ li a {
   left:12%;
 }
 
-.share-icon {
+.miffy-2021{
+  position: absolute;
+  top:89%;
+  left:5%;
+  /* height: 10px; */
+}
+
+.share-buttons{
+  position: absolute;
+  top: 90px;
+  right: 60px;
+  height: 32px; 
+  display: flex;
+  align-items: center;
+}
+
+.share-icon{
+  width: 25px;
+}
+
+.sns-images{
+  list-style: none;
+  display: flex;
+  /* animation: sns-images 3s infinite; */
+}
+
+.sns-icon {
   width: 25px;
   height: 25px;
   margin-left: 15px;
 }
-.share-button {
-  position: absolute;
-  top: 90px;
-  right: 60px;
-  height: 32px;
+
+.sns-icon:hover{
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
 }
 
-.share-images{
-  list-style: none;
-  display: flex;
+@keyframes shake {
+  0% {
+      transform: scale(1, 0.8);
   }
+  20% {
+      transform: scale(0.8, 1.1);
+  }
+  95% {
+      transform: scale(1, 1);
+  }
+  100% {
+      transform: scale(1, 0.8);
+  }
+}
+
+.news{
+  z-index: 1;
+  position: fixed;
+  top:75px;
+  left:-3px;
+  padding: 25px 8px 15px 8px;
+  background-color: #fccc00;
+  border: 3px solid #080000;
+}
+
+.news:hover{
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+  background-color: #eb6100;
+}
 
 .menu {
   z-index: 1;
@@ -80,6 +137,11 @@ li a {
 .menu-list {
   list-style: none;
   padding: 0%;
+}
+
+.menu-shake:hover{
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
 }
 
 .description {
@@ -182,6 +244,18 @@ li a {
     border: #080000 1px solid;
     width: 200px;
     height: 50px;
+}
+
+.site-policy:hover{
+  color: #ffffff;
+}
+.site-terms:hover{
+  color: #ffffff;
+}
+
+.logo:hover{
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
 }
 
 /* @media screen and (max-width: 767px)
