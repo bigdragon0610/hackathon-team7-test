@@ -202,3 +202,59 @@ div.courcesList * {
     border: 1px solid #b5b5b5;
     border-radius: 5px;
 }
+
+.tripPlan-pre{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 103px;
+    
+
+}
+.tripPlan-pre>div{
+    position: relative;
+}
+
+.tripPlan-pre-wPhoto{
+    font-family: "HiraginoUDSerifStd", serif;
+    position: absolute;
+    top: 7%;
+    left: 37%;
+    color: white;
+    font-size: 50px;
+}
+.tripPlan-pre-wPhoto2{
+    font-family: "HiraginoUDSerifStd", serif;
+    position: absolute;
+    color: white;
+    
+}
+.tripPlan-pre-back{
+    position: absolute;
+    
+    top: 5%;
+    left:15% ;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.tripPlan-pre-text{
+    top: 5%;
+    left:15% ;
+    font-size: 36px;
+    text-align: center;
+}
+.tripPlan-pre-text2{
+    font-family: "HiraginoUDSerifStd", serif;
+    color: #cc0033;
+}
+.tripPlan-pre-text3{
+    font-family: "HiraginoUDSerifStd", serif;
+    color: #cc0033;
+}
+
+
+
+
+
+
+/* @media screen and (max-width:600px){
+    
+} */
