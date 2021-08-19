@@ -1,0 +1,301 @@
+@media screen and (min-width: 481px){
+    header{
+        max-width: 960px;
+        margin: 0 auto;
+        /* 要素の横並び */
+        display: flex;
+        /* 二つの要素を両端に配置し、間にスペースをとる */
+        justify-content: space-between;
+        /* 子要素の高さを合わせる */
+        align-items: center;
+        margin: 70px auto;
+    
+    }
+    
+    h1{
+        margin-left: 30px;
+    }
+    
+    header ul{
+        list-style: none;
+        display: flex;
+    
+    }
+    
+    header li{
+        /* リストの間隔をあける */
+        padding-right: 30px;
+    }
+    
+    .instagram{
+        /* 画像の高さを固定 */
+        height: 20px;
+    }
+    
+    section.wrapper{
+        max-width: 960px;
+        margin: 0 auto 130px auto;
+        font-size: 0.9rem;
+        padding: 0 4%;
+    }
+    
+    .page_top_image img{
+        max-width: 100%;
+        height: 400px;
+        /* 画像をボックスに収まるように切り取る */
+        object-fit: cover;
+        margin-bottom: 80px;
+    }
+
+    .section_title{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .About ul{
+        list-style: none;
+        margin-bottom: 30px;
+    }
+    
+    
+    .About p{
+        /* ulとの頭の位置を揃える */
+        padding-left: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .Works .images_position{
+        display: flex;
+        /* 横並びの折り返し */
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+    
+    .Works .images_position .images{
+        /* 三枚で折り返すように一つの画像の幅はページの約三分の一 */
+        width: 30%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .News dl{
+        margin: 0 30px;
+    }
+    
+    .News dl div{
+        /* dtとddの横ならべ */
+        display: flex;
+        border-bottom: 1px solid #c8c8c8;
+        /* 上下のborderとのスペースを作る */
+        padding: 20px 0;
+        
+    }
+    
+    .News dl div.div_top{
+        border-top: 1px solid #c8c8c8;
+    }
+    
+    .Contact form dl div{
+        /* dtとddの横ならべ */
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .Contact form dl div dt{
+        /* dtのwidthを設定することでddの頭を揃えることができる */
+        width: 10%;
+        margin-left: 30px;
+    }
+    
+    .Contact form dl div dd input{
+        width: 760px;
+        height: 40px;
+    }
+    
+    .Contact form dl div dd textarea{
+        width: 760px;
+        height: 150px;
+    }
+    
+    .Contact form{
+        /* 親要素であるformタグはrelativeを設定 */
+        position: relative;
+    }
+    
+    .Contact form input.submit{
+        cursor: pointer;
+        position: absolute;
+        /* formタグを基準として送信ボタンを移動させる */
+        left: 43%;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: #24292e;
+        color: white;
+    }
+    
+    .Contact form input.submit:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    footer{
+       text-align: center; 
+       color: white;
+       background-color: #24292e;
+       font-size: 10px;
+       padding: 5px 0;
+    
+    }
+}
+
+
+/* スマホ画面対応 */
+@media screen and (max-width: 480px){ 
+    header{
+        max-width: 480px;
+        flex-direction: column;
+        margin: 70px auto;
+    
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    header ul{
+        list-style: none;
+        display: flex;
+    
+    }
+    
+    header li{
+        /* リストの間隔をあける */
+        padding-right: 30px;
+    }
+    
+    .instagram{
+        /* 画像の高さを固定 */
+        height: 20px;
+    }
+
+    section.wrapper{
+        max-width: 480px;
+        margin: 0 auto 130px auto;
+        font-size: 0.9rem;
+        padding: 0 4%;
+    }
+
+    .page_top_image img{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .section_title{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .About ul{
+        list-style: none;
+        margin-bottom: 30px;
+    }
+    
+    
+    .About p{
+        /* ulとの頭の位置を揃える */
+        padding-left: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .Works .images_position{
+        display: flex;
+        /* 横並びの折り返し */
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+    
+    .Works .images_position .images{
+        /* 三枚で折り返すように一つの画像の幅はページの約三分の一 */
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .News dl{
+        margin: 0 30px;
+    }
+    
+    .News dl div{
+        /* dtとddの横ならべ */
+        flex: none;
+        border-bottom: 1px solid #c8c8c8;
+        /* 上下のborderとのスペースを作る */
+        padding: 20px 0;
+        
+    }
+    
+    .News dl div.div_top{
+        border-top: 1px solid #c8c8c8;
+    }
+    
+    .Contact form dl div{
+        /* dtとddの横ならべ */
+        flex: none;
+        margin-bottom: 10px;
+    }
+    
+    .Contact form dl div dt{
+        /* dtのwidthを設定することでddの頭を揃えることができる */
+        width: 20%;
+        margin-left: 40px;
+    }
+    
+    .Contact form dl div dd input{
+        width: 100%;
+        height: 40px;
+    }
+
+    .Contact form dl div dd textarea{
+        width: 100%;
+        height: 150px;
+    }
+    
+    .Contact form{
+        /* 親要素であるformタグはrelativeを設定 */
+    
+        position: relative;
+    }
+    
+    .Contact form input.submit{
+        cursor: pointer;
+        position: absolute;
+        /* formタグを基準として送信ボタンを移動させる */
+        left: 30%;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: #24292e;
+        color: white;
+    }
+    
+    .Contact form input.submit:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    /* コメント */
+    /* コメント */
+
+    footer{
+       text-align: center; 
+       color: white;
+       background-color: #24292e;
+       font-size: 10px;
+       padding: 5px 0;
+    
+    }
+}
+
+
+

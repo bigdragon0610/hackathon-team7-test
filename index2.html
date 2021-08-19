@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>もっしゃそん</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            <img src="https://code-step.com/demo/html/portfolio1/img/logo.svg" alt="My Work">
+        </h1>
+        
+        <nav>
+            <ul class="contents_list">
+                <li>About</li>
+                <li>Works</li>
+                <li>News</li>
+                <li>Contact</li>
+                <li><img class="instagram" src="https://code-step.com/demo/html/portfolio1/img/icon-instagram.png"
+                        alt="インスタグラム"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+    
+            <picture class="page_top_image">
+                <!-- スマホ画面の時の画像の切り替え -->
+                <source srcset="https://code-step.com/demo/html/portfolio1/img/mainvisual-sp.jpg" media="(max-width: 480px)"> <!-- 幅480px以下なら表示 -->
+                <img src="https://code-step.com/demo/html/portfolio1/img/mainvisual-pc.jpg" alt="">
+            </picture>
+
+        <section class="wrapper About">
+            <h2 class="section_title">About</h2>
+
+            <p>Xxxxx ashley</p>
+
+            <ul class="information">
+                <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                <li>tel: 000-0000-0000</li>
+                <li>url: www.xxxxxx.jp</li>
+                <li>mail: xxx@xxxxxx.jp</li>
+            </ul>
+
+            <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </section>
+
+
+
+        <section class="wrapper Works">
+            <h2 class="section_title">Works</h2>
+
+            <div class="images_position">
+                <img class="images" src="https://code-step.com/demo/html/portfolio1/img/works1.jpg" alt="">
+                <img class="images" src="https://code-step.com/demo/html/portfolio1/img/works2.jpg" alt="">
+                <img class="images" src="https://code-step.com/demo/html/portfolio1/img/works3.jpg" alt="">
+                <img class="images" src="https://code-step.com/demo/html/portfolio1/img/works4.jpg" alt="">
+                <img class="images" src="https://code-step.com/demo/html/portfolio1/img/works5.jpg" alt="">
+                <img class="images" src="https://code-step.com/demo/html/portfolio1/img/works6.jpg" alt="">
+            </div>
+        </section>
+
+
+
+        <section class="wrapper News">
+            <h2 class="section_title">News</h2>
+
+            <dl>
+                <div class="div_top">
+                    <dt class="date dt_top">2020.XX.XX</dt>
+                    <dd class="event dd_top">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+                </div>
+            
+                <div>
+                    <dt class="date">2020.XX.XX</dt>
+                    <dd class="event">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+                </div>
+            
+                <div>
+                    <dt class="date">2019.XX.XX</dt>
+                    <dd class="event">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+                </div>
+            
+                <div>
+                    <dt class="date">2019.XX.XX</dt>
+                    <dd class="event">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+                </div>
+            
+                <div>
+                    <dt class="date">2019.XX.XX</dt>
+                    <dd class="event">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+                </div>
+            
+            </dl>
+        </section>
+
+
+        <section class="wrapper Contact">
+            <h2 class="section_title">Contact</h2>
+
+            <form action="">
+                <dl>
+                    <div>
+                        <dt>NAME</dt>
+                        <dd><input type="text"></dd>
+                    </div>
+            
+                    <div>
+                        <dt>E-mail</dt>
+                        <dd><input type="text"></dd>
+                    </div>
+            
+                    <div>
+                        <dt>MESSAGE</dt>
+                        <dd><textarea name="MESSAGE" id="" cols="" rows="8"></textarea></dd>
+                    </div>
+                </dl>
+
+                <input class="submit" type="submit" value="送信">
+                
+            </form>
+        </section>
+    </div>
+
+    <!-- コメント -->
+    <!-- コメント -->
+    <footer>
+        <p>© 2020 My Work</p>
+    </footer>
+
+</body>
+</html>
