@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/*
+	[Base]
+		0. Resetting default margin and padding
+		1. HTML, Body, Anchor
+		2. Heading, Paragraph
+		3. List
+		4. Table
+		5. Form
+		6. Other
+		7. For IE6/7
+
+	[Module]
+		1. Common Module
+		90. Other
+		99. Clearfix
+		
+	[Top]
+*/
+
+/* //////////////////////////////////////////////////
+[Base] 
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+	0. Resetting default margin and padding
+-------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, p, blockquote, th, td, form, fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, figure, figcaption,footer,
+header, hgroup, menu, nav, section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/* --------------------------------------------------
+	1. HTML, Body, Anchor
+-------------------------------------------------- */
+html { overflow-y: scroll; }
+body { font: 12px/1.231 sans-serif; }
+* html body { font-size: small; font: x-small; }
+*:first-child+html body { font-size: small; font: x-small; }
+
+/* --------------------------------------------------
+	2. Heading, Paragraph
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	line-height: 1.2;
+}
+
+/* --------------------------------------------------
+	3. List
+-------------------------------------------------- */
+li { list-style: none; }
+
+/* --------------------------------------------------
+	4. Table
+-------------------------------------------------- */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+	font-family: inherit;
+}
+caption, th, td {
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+/* --------------------------------------------------
+	5. Form
+-------------------------------------------------- */
+fieldset { border: none; }
+
+input, textarea, select, label {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: middle;
+}
+label { cursor: pointer; }
+
+textarea { overflow: auto; }
+
+/* --------------------------------------------------
+	6. Other
+-------------------------------------------------- */
+img {
+	border: none;
+	vertical-align: bottom;
+}
+object {
+	vertical-align: middle;
+	outline: none;
+}
+em, strong {
+	font-weight: bold;
+	font-style: normal;
+}
+abbr, acronym {
+	border: none;
+	font-variant: normal;
+}
+q:before, q:after { content: ''; }
+
+address, caption, cite, code, dfn, var {
+	font-weight: normal;
+	font-style: normal;
+}
+code, pre { font-family: monospace; }
+
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+hr { display: none; }
+
+/* ------------------------------------------------------------
+	7. For IE6/7
+------------------------------------------------------------ */
+
+/* --- for ie7: page zoom bug fix --- */
+*:first-child+html body,
+*:first-child+html br { letter-spacing: 0; }
+
+
+
+/* //////////////////////////////////////////////////
+[Module] 
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+	1. Common Module
+-------------------------------------------------- */
+.inlineBlock { display: -moz-inline-box; display: inline-block; }
+* html .inlineBlock { display: inline; zoom: 1; }
+*:first-child+html .inlineBlock { display: inline; zoom: 1; }
+
+/* --------------------------------------------------
+	90. Other
+-------------------------------------------------- */
+.btn { cursor: pointer; }
+
+.swfObject { text-align: center; }
+.swfObject img {
+	position: relative;
+	top: 50%;
+	margin-top: -16px;
+}
+
+/* for Voice Browser */
+.hidden {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+/* Noscript Message */
+#msgNoscript {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: 5px 0;
+	border-top: 1px solid #f00;
+	border-bottom: 1px solid #f00;
+	background: #fcc;
+	color: #f00;
+	line-height: 1.2;
+	text-align: center;
+	opacity: 0.7;
+}
+
+/* --------------------------------------------------
+	99. Clearfix
+-------------------------------------------------- */
+.group { *zoom: 1; } /* for ie6/7 */
+.group:after { content: ""; display: block; clear: both; }

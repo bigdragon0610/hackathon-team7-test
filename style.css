@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* --------------------------------------------------
+	1. General
+-------------------------------------------------- */
+html {
+  overflow-y: scroll;
+}
+
+/* for mozilla: always display scrollbar */
+body {
+  line-height: 1.4;
+  background: #fff;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #20B1E6;
+}
+
+a:visited {
+  color: #20B1E6;
+}
+
+#wrapper {
+  background: #749ae1 url("../img/bg_wrapper.jpg") repeat-x 0 0;
+}
+
+#container {
+  background: url("http://www.nasinc.co.jp/jp/natsume-anime/img/bg_container.png") no-repeat 50% 0;
+}
+
+#content {
+  position: relative;
+  overflow: hidden;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+#p-home #content {
+  overflow: visible;
+}
+
+#p-home #content:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  content: " ";
+}
+
+* html #p-home #content {
+  zoom: 1;
+}
+
+*:first-child + html #p-home #content {
+  zoom: 1;
+}
+
+#p-home #content #pickUpBnr {
+  position: absolute;
+  top: 36px;
+  left: 700px;
+  width: 350px;
+  text-align: center;
+}
+
+#p-home #content #pickUpBnr .bnr-event {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#contentInner {
+  position: relative;
+  overflow: hidden;
+  width: 910px;
+  min-height: 666px;
+  height: auto !important;
+  height: 666px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* --------------------------------------------------
+	2. Layouts
+-------------------------------------------------- */
+#siteTitle img {
+  position: absolute;
+  top: 6px;
+  left: 40px;
+}
+
+#main {
+  position: relative;
+  float: right;
+  width: 430px;
+  padding: 51px 35px 0;
+  background: white url("../img/bg_main.png") no-repeat 0 0;
+}
+
+#main .banner {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 182px;
+  height: 242px;
+  overflow: hidden;
+  display: block;
+}
+
+#main .banner img:hover {
+  margin-top: -242px;
+
+}
+#sidebar {
+  float: left;
+  width: 386px;
+  padding: 132px 12px 0;
+  *line-height: 1.2;
+}
+
+/* --------------------------------------------------
+	3. Main
+-------------------------------------------------- */
+#p-home #main {
+  width: 500px;
+  padding: 0;
+  background: none;
+}
+
+#main .section {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+* html #main .section {
+  zoom: 1;
+}
+
+#pageTitle {
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+#main .headings {
+  margin-bottom: 18px;
+}
+
+#main .section p {
+  margin-bottom: 18px;
+}
+
+#main .staff th,
+#main .cast th {
+  width: 11em;
+  padding-bottom: 5px;
+}
+
+#main .staff td,
+#main .cast td {
+  padding-bottom: 5px;
+}
+
+#main .cast .last-child th,
+#main .cast .last-child td {
+  padding-top: 1em;
+}
+
+#p-character .section p {
+  margin-bottom: 0;
+}
+
+#p-character .section .profile {
+  margin-bottom: 10px;
+}
+
+#p-character .fl-left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0 !important;
+}
+
+#main .pageTop {
+  margin: 10px 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	4. Sidebar
+-------------------------------------------------- */
+#nav {
+  margin-bottom: 12px;
+}
+
+#nav .menu {
+  margin-left: -23px;
+  text-align: center;
+}
+
+#nav .menu a {
+  display: -moz-inline-box;
+  display: inline-block;
+  min-height: 10px;
+  padding: 15px 0 4px 23px;
+}
+
+#nav .menu a:hover,
+#nav .menu a.active {
+  background: url("http://www.nasinc.co.jp/jp/natsume-anime/img/bg_nav.png") no-repeat 6px 4px;
+}
+
+#nav .menu ul {
+  margin-top: 15px;
+  margin-bottom: 13px;
+}
+
+#character ul, #music ul {
+  margin-left: 155px;
+}
+
+#episode ul, #special ul {
+  margin-left: 165px;
+}
+
+#news ul, #about ul {
+  margin-left: 175px;
+}
+
+#goods ul {
+  margin-left: 185px;
+}
+
+#nav .menu li {
+  text-align: left;
+}
+
+#nav .menu li a {
+  display: inline;
+  min-height: auto;
+  padding: 0 0 0 10px;
+  background: url("../img/icon_list.png") no-repeat 0 50%;
+  color: #0d6199;
+  text-decoration: none;
+}
+
+#nav .menu li a:hover {
+  background: url("../img/icon_list.png") no-repeat 0 50%;
+  text-decoration: underline;
+}
+
+/*
+#episode a:hover {
+  padding: 15px 34px 4px 23px !important;
+  background: url("../img/nav_episode_o.png") no-repeat 23px 0 !important;
+}
+#episode a:hover img { visibility: hidden; background-color: transparent; }
+*/
+#bnrTwitter {
+  margin: 8px auto 0;
+  text-align: center;
+}
+
+#information {
+  width: 380px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #d8e9fe;
+}
+
+#information a {
+  color: #0d6199;
+}
+
+#information ul {
+  overflow: hidden;
+  padding: 0 13px;
+  color: #0d6199;
+}
+
+* html #information ul {
+  padding-right: 10px;
+}
+
+#information li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  background: url("../img/icon_list.png") no-repeat 0 0.5em;
+}
+
+#announcement {
+  color: #f90;
+  text-align: center;
+}
+
+#announcement strong {
+  color: #f90;
+  font-weight: bold;
+  font-size: 116%;
+  *font-size: 108%;
+}
+
+#announcement span {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 91%;
+  *font-size: 83%;
+}
+
+/* announcementBg */
+#announcementBg {
+  width: 380px;
+  margin: 0 auto;
+  padding: 1em 0;
+  color: #fbcd00;
+  text-align: center;
+  background: #1c6b9f;
+}
+
+#announcementBg strong {
+  font-weight: bold;
+  font-size: 116%;
+  *font-size: 108%;
+}
+
+#announcementBg span {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 91%;
+  *font-size: 83%;
+}
+
+#announcementBg a {
+  color: #d8e9fe;
+}
+
+/* --------------------------------------------------
+	5. Footer
+-------------------------------------------------- */
+#footer {
+  clear: both;
+  padding-bottom: 30px;
+  padding-top: 31px;
+  background: white url("http://www.nasinc.co.jp/jp/natsume-anime/img/bg_footer.png") repeat-x 0 0;
+}
+#footer .inner {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+#bnrLinksLast {
+  width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.bnrLinks {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bnrLinks li {
+  display: inline;
+  margin-right: 7px;
+}
+
+#copyright {
+  text-align: center;
+}
+
