@@ -1,0 +1,469 @@
+body {
+  background-color: #004c97;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, arial, "游ゴシック体", YuGothic,
+    "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+    "メイリオ", sans-serif;
+}
+
+div {
+  display: block;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #ffffff;
+}
+
+.miffy-loading {
+  position: absolute;
+  left: 36%;
+  height: 460px;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* #loading2{
+  width: 100vw;
+  height: 100vh;
+  transition: all 4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: #ffffff;
+} */
+/* 
+.loaded2 {
+  opacity: 0;
+  visibility: hidden;
+} */
+
+.header {
+  /* padding: 0 6% 46px; */
+  padding:300px 6%;
+  background: linear-gradient(
+    180deg,
+    #004c97 0%,
+    #004c97 50%,
+    #15722c 50%,
+    #15722c 100%
+  );
+  position: relative;
+  /* text-align: right; */
+}
+
+.miffy-header {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  height: 460px;
+}
+
+.miffy-kumo {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  height: 100px;
+}
+
+.miffy-65 {
+  position: absolute;
+  top: 73%;
+  left: 12%;
+  /* height: 10px; */
+}
+
+.miffy-logo {
+  position: absolute;
+  top: 76%;
+  left: 12%;
+}
+
+.miffy-2021 {
+  position: absolute;
+  top: 89%;
+  left: 5%;
+  /* height: 10px; */
+}
+
+.share-buttons {
+  position: absolute;
+  top: 90px;
+  right: 60px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.share-icon {
+  width: 25px;
+}
+
+.sns-images {
+  list-style: none;
+  display: flex;
+  /* animation: sns-images 3s infinite; */
+}
+
+.sns-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.sns-icon:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  20% {
+    transform: scale(0.8, 1.1);
+  }
+  95% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}
+
+.news {
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  left: -3px;
+  padding: 25px 8px 15px 8px;
+  background-color: #fccc00;
+  border: 3px solid #080000;
+}
+
+.news:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+  background-color: #eb6100;
+}
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  padding: 6px 40px;
+  color: black;
+}
+
+.menu-title {
+  border-bottom: 1px solid #080000;
+  width: 100%;
+  line-height: 2;
+  padding-bottom: 10px;
+  margin-bottom: 17px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0%;
+}
+
+.menu-shake:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+.description {
+  /* background-color: #004C97; */
+  color: #ffffff;
+  padding: 216px 80px;
+  position: relative;
+  border-bottom: #080000 solid 7px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.concept-title {
+  display: flex;
+  /* margin-top:0px; */
+}
+
+.concept-box {
+  display: inline-block;
+  width: 544px;
+  margin-left: 128px;
+  margin-top: 0;
+}
+
+.p-1 {
+  margin: 0;
+}
+
+.p-2 {
+  margin: 34px 0;
+}
+
+.miffy-snow {
+  position: absolute;
+  bottom: -177px;
+  left: 0px;
+  z-index: 9999;
+}
+
+.twitter {
+  background-color: #ffffff;
+  color: #004c97;
+  text-align: center;
+  position:relative; 
+  padding: 216px 100px;
+}
+
+.twitter-title {
+  margin: 96px 38% 40px auto;
+  line-height: 1;
+}
+
+.twitter-timeline-box {
+  padding: 30px 25px;
+  margin: 0 auto 216px auto;
+  /* margin-bottom: 216px; */
+  border: 3px solid #fccc00;
+  width: 544px;
+  height: 425px;
+}
+
+.twitter-timeline {
+  /* display: block; */
+  position: absolute;
+}
+
+.miffy-footer {
+  position: absolute;
+  bottom: -5px;
+  left: 29%;
+  z-index: 9999;
+}
+
+.footer-box {
+  background-color: #004c97;
+  color: #ffffff;
+  padding: 96px 60px 30px;
+  position: relative;
+  /* text-align: center; */
+  border-top: #080000 solid 6px;
+}
+
+
+.footer-box,.footer-responsive,.footer-box-responsive{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  position: relative;
+}
+
+.hp-banner {
+  border: #080000 1px solid;
+  width: 200px;
+  height: 50px;
+}
+
+.site-policy:hover {
+  color: #ffffff;
+}
+.site-terms:hover {
+  color: #ffffff;
+}
+
+.logo:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+
+
+@media screen and (max-width: 766px) {
+  .menu {
+    display: none;
+  }
+
+  .share-buttons {
+    display: none;
+  }
+
+  /* ======HEADER====== */
+
+  .miffy-header {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    height: 230px;
+  }
+
+  .miffy-kumo {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    height: 50px;
+  }
+
+  .miffy-65 {
+    position: absolute;
+    top: 80%;
+    left: 12%;
+    /* height: 10px; */
+  }
+
+  .miffy-logo {
+    position: absolute;
+    top: 83%;
+    left: 12%;
+    height: 25px;
+  }
+
+  .miffy-2021 {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    height: 10px;
+  }
+
+  /* ======DESCRIPTION====== */
+
+  .description {
+    color: #ffffff;
+    padding: 100px 5%;
+    position: relative;
+    border-bottom: #080000 solid 7px;
+    /* display: flex;
+    align-items: flex-start; */
+    display: block;
+  }
+
+  .concept-title {
+    display: block;
+    width: 10%;
+    /* margin-top:0px; */
+  }
+
+  .concept-box {
+    display: block;
+    /* width: 544px; */
+    /* margin-left: 128px; */
+    margin: 0;
+  }
+
+  .miffy-snow {
+    position: absolute;
+    bottom: -110px;
+    left: 0px;
+    height: 250px;
+    z-index:9999 ;
+  }
+
+  /* ======TWITTER====== */
+  
+  .twitter {
+    background-color: #ffffff;
+    color: #004c97;
+    text-align: center;
+    position:relative; 
+    padding: 216px 100px;
+    position: relative;
+    border-bottom: #080000 solid 5px;
+  }
+
+  .twitter-title {
+    margin: 96px 38% 40px auto;
+    line-height: 1;
+  }
+
+  .twitter-timeline-box {
+    padding: 30px 25px;
+    margin: 0 auto 216px auto;
+    border: 3px solid #fccc00;
+    display: block;
+    width: 90%;
+    /* width: 544px;
+    height: 425px; */
+  }
+
+  .twitter-timeline {
+    /* display: block; */
+    /* position: absolute; */
+  }
+  
+  .miffy-footer {
+    position: absolute;
+    bottom: -50px;
+    left: 15%;
+    width:50%;
+    z-index: 9999;
+  }
+  
+  /* ======FOOTTER====== */
+
+  .footer-box {
+    background-color: #004c97;
+    color: #ffffff;
+    /* padding: 96px 60px 30px; */
+    position: relative;
+    /* text-align: center; */
+  }
+  
+  .footer-box{
+    border-top: #080000 solid 3px;
+    display: block;
+    position: relative;
+  }
+
+  .footer-responsive{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+  }
+
+  .footer-box-responsive {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  .copy-right{
+    width:40vh;
+  }
+
+  .site-terms{
+    font-size: 10px;
+  }
+
+  .logo{
+    width:100px;
+  }
+  
+  .logo:hover {
+    animation: shake 0.3s;
+    animation-iteration-count: 1;
+  }
+}
