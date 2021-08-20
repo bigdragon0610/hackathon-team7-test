@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px){
+@media screen and (min-width: 600px){
     header{
         max-width: 960px;
         margin: 0 auto;
@@ -9,7 +9,6 @@
         /* 子要素の高さを合わせる */
         align-items: center;
         margin: 70px auto;
-    
     }
     
     h1{
@@ -19,7 +18,6 @@
     header ul{
         list-style: none;
         display: flex;
-    
     }
     
     header li{
@@ -31,14 +29,7 @@
         /* 画像の高さを固定 */
         height: 20px;
     }
-    
-    section.wrapper{
-        max-width: 960px;
-        margin: 0 auto 130px auto;
-        font-size: 0.9rem;
-        padding: 0 4%;
-    }
-    
+
     .page_top_image img{
         max-width: 100%;
         height: 400px;
@@ -46,8 +37,15 @@
         object-fit: cover;
         margin-bottom: 80px;
     }
+    
+    section.wrapper{
+        max-width: 960px;
+        margin: 0 auto 130px auto;
+        font-size: 0.9rem;
+        padding: 0 4%;
+    }
 
-    .section_title{
+    section h2.section_title{
         text-align: center;
         margin-bottom: 70px;
     }
@@ -88,7 +86,6 @@
         border-bottom: 1px solid #c8c8c8;
         /* 上下のborderとのスペースを作る */
         padding: 20px 0;
-        
     }
     
     .News dl div.div_top{
@@ -117,19 +114,13 @@
         height: 150px;
     }
     
-    .Contact form{
-        /* 親要素であるformタグはrelativeを設定 */
-        position: relative;
-    }
-    
     .Contact form input.submit{
         cursor: pointer;
-        position: absolute;
-        /* formタグを基準として送信ボタンを移動させる */
-        left: 43%;
+        /* インライン要素をブロック要素に変えることで動かせるようにする */
+        display: block;
+        margin: 30px auto 0 auto;
         width: 200px;
         height: 50px;
-        margin-top: 30px;
         background-color: #24292e;
         color: white;
     }
@@ -145,18 +136,15 @@
        background-color: #24292e;
        font-size: 10px;
        padding: 5px 0;
-    
     }
 }
 
 
 /* スマホ画面対応 */
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 600px){ 
     header{
-        max-width: 480px;
-        flex-direction: column;
+        max-width: 100%;
         margin: 70px auto;
-    
     }
     
     h1{
@@ -179,19 +167,19 @@
         height: 20px;
     }
 
-    section.wrapper{
-        max-width: 480px;
-        margin: 0 auto 130px auto;
-        font-size: 0.9rem;
-        padding: 0 4%;
-    }
-
     .page_top_image img{
         width: 100%;
         margin-bottom: 80px;
     }
 
-    .section_title{
+    section.wrapper{
+        max-width: 100%;
+        margin: 0 auto 130px auto;
+        font-size: 0.9rem;
+        padding: 0 4%;
+    }
+
+    section h2.section_title{
         text-align: center;
         margin-bottom: 70px;
     }
@@ -232,7 +220,6 @@
         border-bottom: 1px solid #c8c8c8;
         /* 上下のborderとのスペースを作る */
         padding: 20px 0;
-        
     }
     
     .News dl div.div_top{
@@ -241,7 +228,6 @@
     
     .Contact form dl div{
         /* dtとddの横ならべ */
-        flex: none;
         margin-bottom: 10px;
     }
     
@@ -261,17 +247,11 @@
         height: 150px;
     }
     
-    .Contact form{
-        /* 親要素であるformタグはrelativeを設定 */
-    
-        position: relative;
-    }
-    
     .Contact form input.submit{
         cursor: pointer;
-        position: absolute;
-        /* formタグを基準として送信ボタンを移動させる */
-        left: 30%;
+        /* インライン要素をブロック要素に変えることで動かせるようにする */
+        display: block;
+        margin: 30px auto 0 auto;
         width: 200px;
         height: 50px;
         margin-top: 30px;
@@ -283,9 +263,6 @@
         background-color: white;
         color: black;
     }
-    
-    /* コメント */
-    /* コメント */
 
     footer{
        text-align: center; 
@@ -293,7 +270,6 @@
        background-color: #24292e;
        font-size: 10px;
        padding: 5px 0;
-    
     }
 }
 
