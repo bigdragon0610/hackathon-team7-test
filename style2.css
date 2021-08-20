@@ -205,7 +205,6 @@
     }
     
     .Works .images_position .images{
-        /* 三枚で折り返すように一つの画像の幅はページの約三分の一 */
         width: 100%;
         margin-right: 20px;
         margin-bottom: 20px;
@@ -216,7 +215,6 @@
     }
     
     .News dl div{
-        /* dtとddの横ならべ */
         flex: none;
         border-bottom: 1px solid #c8c8c8;
         /* 上下のborderとのスペースを作る */
